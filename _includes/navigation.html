@@ -27,15 +27,15 @@
         <div class="collapse navbar-collapse navbar-responsive-collapse pull-right">
           <ul class="nav navbar-nav">
             {% assign current = page.url | downcase | split: '/' %}
-            <li><a href="{{ site.baseurl }}/verbund" {% if current[1] == 'verbund' %}class='current'{% endif %}>Verbund</a></li>
-            <li class="dropdown"><a href="{{ site.baseurl }}/ausbildung" {% if current[1] == 'ausbildung' %}class='current'{% endif %} onclick="location.href='/ausbildung'">Ausbildung<b class="caret"></b></a>
+            <li><a href="../{{ site.baseurl }}/verbund" {% if current[1] == 'verbund' %}class='current'{% endif %}>Verbund</a></li>
+            <li class="dropdown"><a href="../{{ site.baseurl }}/ausbildung" {% if current[1] == 'ausbildung' %}class='current'{% endif %} onclick="location.href='/ausbildung'">Ausbildung<b class="caret"></b></a>
               <ul class="dropdown-menu" id="menu1">
-                <li><a href="{{ site.baseurl }}/stipendium">Lucas Cranach Stipendium</a></li>
+                <li><a href="../{{ site.baseurl }}/stipendium">Lucas Cranach Stipendium</a></li>
               </ul>
             </li>
-            <li><a href="{{ site.baseurl }}/klinik" {% if current[1] == 'klinik' %}class='current'{% endif %}>Klinik</a></li>
-            <li><a href="{{ site.baseurl }}/aerzte" {% if current[1] == 'aerzte' %}class='current'{% endif %}>Haus- und Fachärzte</a></li>
-            <li><a href="{{ site.baseurl }}/kontakt" {% if current[1] == 'kontakt' %}class='current'{% endif %}>Kontakt</a></li>
+            <li><a href="../{{ site.baseurl }}/klinik" {% if current[1] == 'klinik' %}class='current'{% endif %}>Klinik</a></li>
+            <li><a href="../{{ site.baseurl }}/aerzte" {% if current[1] == 'aerzte' %}class='current'{% endif %}>Haus- und Fachärzte</a></li>
+            <li><a href="../{{ site.baseurl }}/kontakt" {% if current[1] == 'kontakt' %}class='current'{% endif %}>Kontakt</a></li>
           </ul>
         </div>
 
