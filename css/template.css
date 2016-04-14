@@ -9020,6 +9020,7 @@ li.home:before,
 li.street:before,
 li.location:before,
 li.sitemap:before,
+li.user:before,
 li.link:before {
   font-family: 'FontAwesome';
   padding-right: 15px;
@@ -9047,6 +9048,9 @@ li.location:before {
 }
 li.sitemap:before {
   content: "\f0e8";
+}
+li.user:before {
+  content: "\f007";
 }
 li.link:before {
   content: "\f105";
