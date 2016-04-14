@@ -1,0 +1,112 @@
+/* ICON LISTS
+*********************************************/
+
+.icon-list {
+	list-style: none;
+    padding-left: 0;
+    margin: 0;
+    line-height: @baseLineHeight*2;
+
+    li {
+    	padding-left: @panel-body-padding*2;
+    }
+}
+
+li.cellphone:before,
+li.fax:before,
+li.mail:before,
+li.home:before,
+li.street:before,
+li.location:before,
+li.sitemap:before,
+li.user:before,
+li.link:before {
+	font-family: 'FontAwesome';
+	padding-right: @panel-body-padding;
+	vertical-align: top;
+	float: left;
+	margin: 0 0 0 -@panel-body-padding*2;
+}
+
+li.cellphone:before {
+	content:"\f095";
+}
+li.fax:before {
+	content:"\f1ac";
+}
+li.mail:before {
+	content:"\f0e0";
+}
+li.home:before {
+	content: "\f015";
+}
+li.street:before {
+	content:"\f018";
+}
+li.location:before  {
+	content:"\f041";
+}
+li.sitemap:before  {
+	content:"\f0e8";
+}
+li.user:before  {
+	content:"\f007";
+}
+li.link:before  {
+	content:"\f105";
+}
+
+/* CONTENT LISTS
+*********************************************/
+
+.list-pro {
+	list-style: none;
+}
+
+.list-pro li:before {
+	font-family: 'FontAwesome';
+	color: @orange;
+	padding-right: @panel-body-padding;
+	vertical-align: top;
+	float: left;
+	margin: 0 0 0 -@panel-body-padding*2;
+	content:"\f058";
+}
+
+
+/* FOOTER LISTS
+*********************************************/
+
+.sub-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: @baseFontSize*0.9;
+
+	a {
+		color: @grey-65;
+		  &:hover,
+		  &:focus {
+		    color: @green;
+		    border-bottom: 1px dotted @green;
+		  }
+
+		  &:focus {
+		    .tab-focus();
+		  }
+	}
+}
+
+.foot-list {
+	list-style: none;
+	font-size: @baseFontSize*0.8;
+	text-transform: uppercase;
+    padding-left: 0;
+    margin: 0;
+    line-height: @baseLineHeight*2;
+
+    li {
+    	display: inline-block;
+    	padding: 0 @panel-body-padding;
+    }
+}

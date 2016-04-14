@@ -1,0 +1,154 @@
+/* RESIZABLE HEADER
+*********************************************/
+
+.header-home {
+	background: url(../images/header/home.jpg);
+}
+
+.header-initiative {
+	background: url(../images/header/initiative.jpg);
+}
+
+.header-clinic {
+	background: url(../images/header/clinic.jpg);
+}
+
+.header-doctors {
+	background: url(../images/header/doctors.jpg);
+}
+
+.header-education {
+	background: url(../images/header/education.jpg);
+}
+
+.header-stipend {
+	background: url(../images/header/stipend.jpg);
+}
+
+.header-img {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: @baseLineHeight*32;
+	margin-bottom: @baseLineHeight*2;
+}
+
+#googlemaps {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: @baseLineHeight*32;
+	margin-bottom: @baseLineHeight*2;
+	position: absolute;
+}
+
+.header-title {
+	margin: @baseLineHeight*6 0 0 0;
+}
+
+.title, .subtitle {
+	background-color: @orange;
+	color: @white;
+	line-height: @baseLineHeight*2;
+	padding: 0 @baseLineHeight;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: @baseFontSize*2;
+	line-height: @baseLineHeight*5;
+}
+
+.subtitle {
+	font-size: @baseFontSize*1.5;
+	line-height: @baseLineHeight*3;
+}
+
+
+/* CONTENT
+*********************************************/
+
+.content {
+	margin-bottom: @baseLineHeight*3;
+}
+
+
+
+/* TEASER
+*********************************************/
+
+.boxes {
+	background-color: @green;
+	padding: @baseLineHeight*3 0;
+}
+
+.teaser {
+	color: @white;
+}
+
+.teaser-icon {
+	font-size: @baseFontSize*4;
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+
+.description {
+	overflow: hidden;
+
+	h3 {
+		color: @white;
+	}
+}
+
+.btn-more {
+	background-color: @orange;
+	border: none;
+	padding: 0 @baseLineHeight;
+	margin-top: @baseLineHeight;
+	height: @baseLineHeight*3;
+	font-family: @boldFontFamily;
+	font-size: @baseFontSize*0.75;
+	line-height: @baseLineHeight*2;
+
+	&:hover {
+		background-color: @white;
+		color: @orange;
+	}
+}
+
+
+/* FOOTER
+*********************************************/
+
+.footing {
+	background-color: @green-10;
+	padding: @baseLineHeight*3 0;
+}
+
+footer {
+
+	background-color: @green;
+	color: @white;
+	padding: @baseLineHeight 0;
+
+	ul {
+		margin: 0;
+	}
+
+	a {
+	  color: @white; 
+	  text-decoration: none;
+	  border-bottom: 1px dotted @white;
+
+	  &:hover,
+	  &:focus {
+	    color: @orange;
+	    border-bottom: 1px dotted @orange;
+	  }
+
+	  &:focus {
+	    .tab-focus();
+	  }
+	}
+}

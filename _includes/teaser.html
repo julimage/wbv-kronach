@@ -1,0 +1,45 @@
+<div class="boxes">
+      <div class="container">
+        <div class="row">
+          <!-- left -->
+          {% for post in site.categories.[page.left] %}
+          <div class="col-md-4 teaser">
+            <div class="col-xs-3 teaser-icon"><i class="fa {{ post.icon }}"></i></div>
+            <div class="col-xs-9">
+              <div class="description">
+                <h3>{{ post.name }}</h3>
+                <p>{{ post.text }}</p>
+                <button class="btn-more" onclick="window.location.href='{{ post.link }}'">Weitere Details</button>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- middle -->
+          {% for post in site.categories.[page.middle] %}
+          <div class="col-md-4 teaser">
+            <div class="col-xs-3 teaser-icon"><i class="fa {{ post.icon }}"></i></div>
+            <div class="col-xs-9">
+              <div class="description">
+                <h3>{{ post.name }}</h3>
+                <p>{{ post.text }}</p>
+                <button class="btn-more" onclick="window.location.href='{{ post.link }}'">Weitere Details</button>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- right -->
+          {% for post in site.categories.[page.right] %}
+          <div class="col-md-4 teaser">
+            <div class="col-xs-3 teaser-icon"><i class="fa {{ post.icon }}"></i></div>
+            <div class="col-xs-9">
+              <div class="description">
+                <h3>{{ post.name }}</h3>
+                <p>{{ post.text }}</p>
+                <button class="btn-more" onclick="window.location.href='{{ post.link }}'">Weitere Details</button>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>

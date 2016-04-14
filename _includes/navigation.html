@@ -1,0 +1,45 @@
+<div class="navigation">
+    <div class="top-bar">
+      <div class="container">
+        <ul class="icon-list pull-right">
+          <li class="cellphone">09261 59-6108</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-wbi" role="navigation">
+      <div class="container">
+
+        <!-- group logo + toggler = better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="glyphicon glyphicon-menu-hamburger"></i>
+                </button>
+                
+            <div class="brand">
+              <a class="navbar-brand link-logo" href="/" {% if current[1] == 'index.html' %}class='current'{% endif %}>Weiterbildungsverbund</br>Kronach</a>
+            </div>
+        </div>
+
+        <!-- Collect content for toggling -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse pull-right">
+          <ul class="nav navbar-nav">
+            {% assign current = page.url | downcase | split: '/' %}
+            <li><a href="/verbund" {% if current[1] == 'verbund' %}class='current'{% endif %}>Verbund</a></li>
+            <li class="dropdown"><a href="/ausbildung" {% if current[1] == 'ausbildung' %}class='current'{% endif %} onclick="location.href='/ausbildung'">Ausbildung<b class="caret"></b></a>
+              <ul class="dropdown-menu" id="menu1">
+                <li><a href="/stipendium">Lucas Cranach Stipendium</a></li>
+              </ul>
+            </li>
+            <li><a href="/klinik" {% if current[1] == 'klinik' %}class='current'{% endif %}>Klinik</a></li>
+            <li><a href="/aerzte" {% if current[1] == 'aerzte' %}class='current'{% endif %}>Haus- und Fachärzte</a></li>
+            <li><a href="/kontakt" {% if current[1] == 'kontakt' %}class='current'{% endif %}>Kontakt</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Navbar -->
+  </div>

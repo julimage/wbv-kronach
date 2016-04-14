@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <!--=== Navigation ===-->
+    {% include navigation.html %}
+    <!--=== End Navigation ===-->
+
+    <!--=== Resizable Header  ===-->
+    {% include gmaps.html %}
+    <!--=== End Resizable Header ===-->
+
+    <!--=== Content ===-->
+    {{ content }}
+    <!--=== End Content ===-->
+
+    <!--=== Foot ===-->
+    {% include foot.html %}
+    <!--=== End Foot ===-->
+
+    <!--=== Footer ===-->
+    {% include footer.html %}
+    <!--=== End Footer ===-->
+
+    <!-- Hashgrid: Kick hashgrid into action -->
+    <script type="text/javascript">
+    var grid = new hashgrid({ numberOfGrids: 2 });
+    </script>
+
+  </body>
+</html>

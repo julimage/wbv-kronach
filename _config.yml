@@ -1,0 +1,6 @@
+# Site settings
+title: Weiterbildungsinitiative Kronach e.V.
+description: Die Weiterbildungsinitiative Kronach e.V. ist ein Zusammenschluss weiterbildungsberechtigter Ärzte im Landkreis Kronach. Wir bieten Ihnen die allgemeinmedizinische Ausbildung aus einer Hand.
+
+# Build settings
+markdown: kramdown
