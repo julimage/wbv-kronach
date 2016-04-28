@@ -7,82 +7,67 @@
   background-color: @green;
 }
 
-.navigation {
-	.navbar-nav {
-		position: relative;
-		text-transform: uppercase;
-	}
+@media (min-width: @screen-md-min) and (max-width: @screen-lg-min){
+  .navbar-brand {
+    font-size: 23px !important;
+  }
 }
 
-.container,
-.container-fluid {
-  > .navbar-header,
-  > .navbar-collapse {
-    padding: 0;
-    }
+@media (max-width: @screen-md-min){
+  .navbar-toggle {
+    margin-top: @baseLineHeight*4 !important;
   }
+}
 
-.navbar-header {
-	margin-bottom: -@baseLineHeight*3;
+@media (max-width: @screen-xs-min) {
+  .navbar-brand {
+    font-size: 16px !important;
+    line-height: @baseLineHeight*2 !important;
+    height: @baseLineHeight*6 !important;
+  }
+  .navbar-toggle {
+    margin-top: @baseLineHeight*2 !important;
+  }
 }
 
 .navbar-default {
-	background: none;
-	border: none;
-	box-shadow: none;
-	margin: 0;
-	font-size: 18px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: @baseLineHeight 0;
 
-	a { border: none;}
+  a {
+    border: none;
+  }
+  
+  .navbar-brand {
+      color: @green;
+      font-family: @regFontFamily;
+      font-size: @baseFontSize*2;
+      line-height: @baseLineHeight*3;
+      height: @baseLineHeight*8;
 
-	.navbar-nav > li {
+      &:hover,
+      &:focus {
+        color: @orange;
+      }
+  }
 
-		a {
-			border: none;
-			color: @fontColor;
+  .navbar-nav {
+    padding-top: @baseLineHeight*4;
+  }
 
-			&:hover,
-			&:focus {
-				color: @green;
-			}
-
-			&:focus {
-				.tab-focus();
-			}
-			&.current {
-				color: @green;
-			}
-		}
-	}
-
-	.navbar-brand {
-		color: @green;
-		font-family: @regFontFamily;
-		font-size: @baseFontSize*2;
-		line-height: @baseLineHeight*3;
-		height: @baseLineHeight*8;
-		position: relative;
-		padding-top: 13px;
-		padding-bottom: 13px;
-		top: -@baseLineHeight*4;
-
-		&:hover,
-		&:focus {
-			color: @orange;
-		}
-
-		&:focus {
-			.tab-focus();
-		}
-	}
-
-	.navbar-toggle {
-		border-color: @green;
-		background: @orange;
-	}
+  .navbar-nav > li a {
+      &:hover,
+      &:focus {
+        color: @green;
+      }
+    
+  }
 }
-
-
 
 
 .sidebar-nav {
