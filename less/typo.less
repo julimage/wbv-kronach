@@ -6,6 +6,18 @@ p {
   line-height: @baseLineHeight*2;
 }
 
+/* LINKS
+*********************************************/
+
+a.inverted {
+	color: @white;
+	border-bottom-color: @white;
+	transition: background-color .5s ease;
+
+	&:hover {
+		background-color: darken(@green, 10%);
+	}
+}
 
 
 /* HEADLINES
