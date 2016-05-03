@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.github.url }}/">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
         Weiterbildungsverbund <br>Kronach</a>
     </div>
 
@@ -24,8 +24,8 @@
             <li {% if current[1] == 'stipendium' %}class='active'{% endif %}><a href="{{ site.baseurl }}/stipendium">Lucas Cranach Stipendium</a></li>
           </ul>
         </li>
-        <li class="visible-xs-block visible-sm-block {% if current[1] == 'ausbildung' %}active{% endif %}"><a href="/ausbildung">Ausbildung</a></li>
-        <li class="visible-xs-block visible-sm-block {% if current[1] == 'stipendium' %}active{% endif %}"><a href="/stipendium">Lucas Cranach Stipendium</a></li>
+        <li class="visible-xs-block visible-sm-block {% if current[1] == 'ausbildung' %}active{% endif %}"><a href="{{ site.baseurl }}/ausbildung">Ausbildung</a></li>
+        <li class="visible-xs-block visible-sm-block {% if current[1] == 'stipendium' %}active{% endif %}"><a href="{{ site.baseurl }}/stipendium">Lucas Cranach Stipendium</a></li>
         <li {% if current[1] == 'klinik' %}class='active'{% endif %}><a href="{{ site.baseurl }}/klinik">Klinik</a></li>
         <li {% if current[1] == 'aerzte' %}class='active'{% endif %}><a href="{{ site.baseurl }}/aerzte">Haus- und Fachärzte</a></li>
         <li {% if current[1] == 'kontakt' %}class='active'{% endif %}><a href="{{ site.baseurl }}/kontakt">Kontakt</a></li>
