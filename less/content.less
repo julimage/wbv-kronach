@@ -33,15 +33,6 @@
 	margin-bottom: @baseLineHeight*2;
 }
 
-#googlemaps {
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: top;
-	height: @baseLineHeight*32;
-	margin-bottom: @baseLineHeight*2;
-	position: absolute;
-}
-
 .header-title {
 	margin: @baseLineHeight*6 0 0 0;
 }
@@ -83,6 +74,23 @@
   }
 }
 
+/* CONTENT
+*********************************************/
+
+#googlemaps {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: @baseLineHeight*32;
+	margin-bottom: @baseLineHeight*2;
+	position: absolute;
+}
+
+
+.scrolloff {
+    pointer-events: none;
+}
+
 
 /* CONTENT
 *********************************************/
@@ -90,6 +98,21 @@
 .content {
 	margin-bottom: @baseLineHeight*3;
 }
+
+@media (max-width: @screen-md-min) {
+	.content {
+		margin-bottom: 0;
+		.col-md-4 {
+			text-align: center;
+			margin-bottom: @baseLineHeight*3;
+		}
+
+		.col-md-12, p {
+			margin-bottom: @baseLineHeight*3;
+		}
+	}
+}
+
 
 /* TEASER
 *********************************************/

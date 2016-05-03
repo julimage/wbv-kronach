@@ -44,4 +44,26 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <script>
+    $( document ).ready(function() {
+      // PREVENTING SCROLL on GoogleMap
+      // https://github.com/kylelam/kylelam.github.io/blob/master/iframe.html
+
+      // set the mouse events to none when doc is ready
+      $('#googlemaps').addClass('scrolloff');
+
+      // when mouse down, set the mouse events free
+      $('.header-img').on("mousedown",function(){
+          console.log("removed");     
+          $('#googlemaps').removeClass('scrolloff');
+      });
+
+      // becuase the mouse up doesn't work...
+      $("#googlemaps").mouseleave(function () {
+        // set the pointer events to none when mouse leaves the map area             
+        $('#googlemaps').addClass('scrolloff');            
+      });  
+    });
+    </script>
 </head>
