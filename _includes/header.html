@@ -1,10 +1,16 @@
 <div class="{{ page.hg-class }} header-img">
     <div class="container">   
       <div class="row">
-        <div class="col-xs-11 header-title">
+        <div class="col-xs-12 header-title">
           <span class="title">{{ page.headline }}</span></br>
-          {% if page.sub-headline-1 %}<span class="subtitle"> {{ page.sub-headline-1 }} </span></br>{% endif %}
-          {% if page.sub-headline-2 %}<span class="subtitle">{{ page.sub-headline-2 }}</span>{% endif %}
+          <div class="hidden-xs">
+            {% if page.sub-headline-1 %}<span class="subtitle"> {{ page.sub-headline-1 }} </span></br>{% endif %}
+            {% if page.sub-headline-2 %}<span class="subtitle">{{ page.sub-headline-2 }}</span>{% endif %}
+          </div>
+          <span class="subtitle visible-xs-block">
+            {% if page.sub-headline-1 %} {{ page.sub-headline-1 }} {% endif %}
+            {% if page.sub-headline-2 %} {{ page.sub-headline-2 }} {% endif %}
+          </span>
         </div>
       </div>
     </div>

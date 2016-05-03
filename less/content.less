@@ -26,9 +26,9 @@
 }
 
 .header-img {
-	background-size: 100% auto;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center center;
 	height: @baseLineHeight*32;
 	margin-bottom: @baseLineHeight*2;
 }
@@ -62,6 +62,25 @@
 .subtitle {
 	font-size: @baseFontSize*1.5;
 	line-height: @baseLineHeight*3;
+}
+
+@media (max-width: @screen-xs-min) {
+	.header-title {
+		background-color: @orange;
+		margin: 0;
+		padding: @baseLineHeight;
+	}
+	.title, .subtitle {
+			padding: 0 0;
+	}
+	.title {
+		font-size: @baseFontSize*1.5;
+		line-height: @baseLineHeight*3;
+	}
+  .subtitle {
+		font-size: @baseFontSize;
+		line-height: @baseLineHeight*2;
+  }
 }
 
 
