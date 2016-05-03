@@ -72,13 +72,11 @@
 	margin-bottom: @baseLineHeight*3;
 }
 
-
-
 /* TEASER
 *********************************************/
 
 .boxes {
-	background-color: @green;
+	background-color: @grey-80;
 	padding: @baseLineHeight*3 0;
 }
 
@@ -114,41 +112,5 @@
 	&:hover {
 		background-color: @white;
 		color: @orange;
-	}
-}
-
-
-/* FOOTER
-*********************************************/
-
-.footing {
-	background-color: @green-10;
-	padding: @baseLineHeight*3 0;
-}
-
-footer {
-
-	background-color: @green-10;
-	color: @fontColor;
-	padding: @baseLineHeight 0;
-
-	ul {
-		margin: 0;
-	}
-
-	a {
-	  color: @fontColor; 
-	  text-decoration: none;
-	  border-bottom: 1px dotted @fontColor;
-
-	  &:hover,
-	  &:focus {
-	    color: @green;
-	    border-bottom: 1px dotted @green;
-	  }
-
-	  &:focus {
-	    .tab-focus();
-	  }
 	}
 }
