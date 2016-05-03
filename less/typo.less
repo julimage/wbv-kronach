@@ -8,11 +8,17 @@ p {
 
 /* LINKS
 *********************************************/
+a {
+	transition: background-color .5s ease;
+}
+
+a:hover {
+	background-color: lighten(@green, 50%);
+}
 
 a.inverted {
 	color: @white;
 	border-bottom-color: @white;
-	transition: background-color .5s ease;
 
 	&:hover {
 		background-color: darken(@green, 10%);
