@@ -97,16 +97,8 @@ li.link:before  {
 	}
 }
 
-.foot-list {
-	list-style: none;
-	font-size: @baseFontSize*0.8;
-	text-transform: uppercase;
-    padding-left: 0;
-    margin: 0;
-    line-height: @baseLineHeight*2;
-
-    li {
-    	display: inline-block;
-    	padding: 0 @panel-body-padding;
-    }
+@media (max-width: @screen-sm-min) {
+  footer .list-inline li {
+    display: block;
+  }
 }
