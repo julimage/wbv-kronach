@@ -4,7 +4,9 @@
           <!-- left -->
           {% for post in site.categories.[page.left] %}
           <div class="col-md-4 teaser">
-            <div class="col-xs-3 teaser-icon"><i class="fa {{ post.icon }}"></i></div>
+            <div class="col-xs-3 teaser-icon">
+              <img src="{{ site.baseurl }}/images/{{ post.icon }}" width="80">
+            </div>
             <div class="col-xs-9">
               <div class="description">
                 <h3>{{ post.name }}</h3>
@@ -17,7 +19,9 @@
           <!-- middle -->
           {% for post in site.categories.[page.middle] %}
           <div class="col-md-4 teaser">
-            <div class="col-xs-3 teaser-icon"><i class="fa {{ post.icon }}"></i></div>
+            <div class="col-xs-3 teaser-icon">
+              <img src="{{ site.baseurl }}/images/{{ post.icon }}" width="80">
+            </div>
             <div class="col-xs-9">
               <div class="description">
                 <h3>{{ post.name }}</h3>
@@ -30,7 +34,9 @@
           <!-- right -->
           {% for post in site.categories.[page.right] %}
           <div class="col-md-4 teaser">
-            <div class="col-xs-3 teaser-icon"><i class="fa {{ post.icon }}"></i></div>
+            <div class="col-xs-3 teaser-icon">
+              <img src="{{ site.baseurl }}/images/{{ post.icon }}" width="80">
+            </div>
             <div class="col-xs-9">
               <div class="description">
                 <h3>{{ post.name }}</h3>
