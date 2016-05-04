@@ -18,16 +18,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li {% if current[1] == 'verbund' %}class='active'{% endif %}><a href="{{ site.baseurl }}/verbund">Verbund</a></li>
-        <li class="dropdown hidden-xs hidden-sm {% if current[1] == 'ausbildung' or current[1] == 'stipendium'%}active{% endif %}">
-          <a href="{{ site.baseurl }}/ausbildung" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" onclick="location.href='{{ site.baseurl }}/ausbildung'">Ausbildung <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li {% if current[1] == 'stipendium' %}class='active'{% endif %}><a href="{{ site.baseurl }}/stipendium">Lucas Cranach Stipendium</a></li>
-          </ul>
-        </li>
-        <li class="visible-xs-block visible-sm-block {% if current[1] == 'ausbildung' %}active{% endif %}"><a href="{{ site.baseurl }}/ausbildung">Ausbildung</a></li>
-        <li class="visible-xs-block visible-sm-block {% if current[1] == 'stipendium' %}active{% endif %}"><a href="{{ site.baseurl }}/stipendium">Lucas Cranach Stipendium</a></li>
+        <li {% if current[1] == 'ausbildung' %}class="active"{% endif %}><a href="{{ site.baseurl }}/ausbildung">Ausbildung</a></li>
+        <li {% if current[1] == 'stipendium' %}class="active"{% endif %}><a href="{{ site.baseurl }}/stipendium">Stipendium</a></li>
         <li {% if current[1] == 'klinik' %}class='active'{% endif %}><a href="{{ site.baseurl }}/klinik">Klinik</a></li>
-        <li {% if current[1] == 'aerzte' %}class='active'{% endif %}><a href="{{ site.baseurl }}/aerzte">Haus- und Fachärzte</a></li>
+        <li {% if current[1] == 'aerzte' %}class='active'{% endif %}><a href="{{ site.baseurl }}/aerzte">Ärzte</a></li>
         <li {% if current[1] == 'kontakt' %}class='active'{% endif %}><a href="{{ site.baseurl }}/kontakt">Kontakt</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->

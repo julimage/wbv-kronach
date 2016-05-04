@@ -7,6 +7,7 @@
 
 .header-initiative {
 	background: url(../images/header/initiative.jpg);
+	background-position: center top;
 }
 
 .header-clinic {
@@ -28,7 +29,7 @@
 .header-img {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center 25%;
 	height: @baseLineHeight*32;
 	margin-bottom: @baseLineHeight*2;
 }
@@ -55,7 +56,22 @@
 	line-height: @baseLineHeight*3;
 }
 
+@media (max-width: @screen-sm-min) {
+	.header-img {
+		background-position: center top;
+		height: @baseLineHeight*22;
+	}
+
+	#googlemaps {
+		height: @baseLineHeight*22 !important;
+	}
+}
+
 @media (max-width: @screen-xs-min) {
+	.header-img {
+			background-size: contain;
+			background-position: center bottom;
+	}
 	.header-title {
 		background-color: @orange;
 		margin: 0;
