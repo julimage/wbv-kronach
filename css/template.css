@@ -9237,11 +9237,13 @@ p {
   margin: 13px 0 0 0;
   line-height: 26px;
 }
+p a {
+  font-family: 'open_sansregular', sans-serif;
+}
 /* LINKS
 *********************************************/
 a {
   color: #3f9f45;
-  font-family: 'open_sansregular', sans-serif;
   transition: background-color 0.5s ease;
 }
 a:hover {
@@ -9249,7 +9251,6 @@ a:hover {
 }
 a.inverted {
   color: #ffffff;
-  font-family: "open_sanslight", sans-serif;
   border-bottom-color: #ffffff;
 }
 a.inverted:hover {
