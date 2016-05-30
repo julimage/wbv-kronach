@@ -2,8 +2,8 @@
 title: Weiterbildungsinitiative Kronach e.V.
 description: Die Weiterbildungsinitiative Kronach e.V. ist ein Zusammenschluss weiterbildungsberechtigter Ärzte im Landkreis Kronach. Wir bieten Ihnen die allgemeinmedizinische Ausbildung aus einer Hand.
 
-baseurl: "/wbv-kronach" # the subpath of your site, e.g. /blog
-url: "http://julimage.github.io/wbv-kronach" # the base hostname & protocol for your site
+#baseurl: "/wbv-kronach" # the subpath of your site, e.g. /blog
+#url: "http://julimage.github.io/wbv-kronach" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
