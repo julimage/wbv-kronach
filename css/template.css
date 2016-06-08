@@ -8922,8 +8922,8 @@ ol {
   .content {
     margin-bottom: 0;
   }
-  .content .col-md-4 {
-    text-align: center;
+  .content .col-md-4,
+  .content .col-md-6 {
     margin-bottom: 39px;
   }
   .content .col-md-12,
