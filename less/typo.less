@@ -4,13 +4,16 @@
 p {
   margin: @baseLineHeight 0 0 0;
   line-height: @baseLineHeight*2;
+
+  a {
+	font-family: @headingsFontFamilyReg;
+	}
 }
 
 /* LINKS
 *********************************************/
 a {
 	color: @green;
-	font-family: @headingsFontFamilyReg;
 	transition: background-color .5s ease;
 }
 
@@ -20,7 +23,6 @@ a:hover {
 
 a.inverted {
 	color: @white;
-	font-family: @sansFontFamily;
 	border-bottom-color: @white;
 
 	&:hover {
